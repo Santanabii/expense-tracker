@@ -1,0 +1,108 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Expense Tracker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-gray-100">
+    <nav class="bg-white shadow-md">
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-xl font-bold text-indigo-600">ExpenseTracker</h1>
+
+        <ul class="flex space-x-6 font-medium">
+          <li>
+            <a href="#" class="text-gray-600 hover:text-indigo-600"
+              >Dashboard</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-gray-600 hover:text-indigo-600">Expenses</a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-600 hover:text-indigo-600">Reports</a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-600 hover:text-indigo-600">Profile</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="max-w-6xl mx-auto p-6">
+      <div class="grid grid-cols-3 gap-6 mb-8">
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h2 class="text-gray-500">Total Balance</h2>
+          <p class="text-2xl font-bold text-green-600">$2,450</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h2 class="text-gray-500">Monthly Spending</h2>
+          <p class="text-2xl font-bold text-red-500">$720</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h2 class="text-gray-500">Budget Left</h2>
+          <p class="text-2xl font-bold text-blue-600">$1,730</p>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow mb-8">
+        <h2 class="text-lg font-semibold mb-4">Add Expense</h2>
+
+        <form class="grid grid-cols-3 gap-4">
+          <input
+            type="text"
+            placeholder="Expense Name"
+            class="border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-400"
+          />
+
+          <input
+            type="number"
+            placeholder="Amount"
+            class="border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-400"
+          />
+
+          <button
+            class="bg-indigo-600 text-white rounded-md hover:bg-indigo-700"
+          >
+            Add
+          </button>
+        </form>
+      </div>
+
+      <div class="bg-white rounded-xl shadow">
+        <table class="w-full text-left">
+          <thead class="bg-gray-50">
+            <tr>
+              <th class="p-4">Expense</th>
+              <th class="p-4">Category</th>
+              <th class="p-4">Amount</th>
+              <th class="p-4">Date</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr class="border-t">
+              <td class="p-4">Lunch</td>
+              <td class="p-4">Food</td>
+              <td class="p-4 text-red-500">$12</td>
+              <td class="p-4">Mar 15</td>
+            </tr>
+
+            <tr class="border-t">
+              <td class="p-4">Uber</td>
+              <td class="p-4">Transport</td>
+              <td class="p-4 text-red-500">$8</td>
+              <td class="p-4">Mar 15</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
