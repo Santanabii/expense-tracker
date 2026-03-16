@@ -77,4 +77,6 @@ document.addEventListener("DOMContentLoaded", function () {
   filterSelect.addEventListener("change", renderExpenses);
 
   renderExpenses();
+
+  module.exports = { Expense, ExpenseTracker };
 });
